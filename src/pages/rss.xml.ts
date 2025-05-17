@@ -18,7 +18,7 @@ export const GET: APIRoute = async ({ request, params, site }) => {
         items: blogPosts.map(({ data, slug }) => ({
             title: data.title,
             description: data.description,
-            link: `/post/${slug}`,
+            link: `/posts/${slug}`,
             pubDate: data.date,
             customData: `<language>es</language>`,
         }))
